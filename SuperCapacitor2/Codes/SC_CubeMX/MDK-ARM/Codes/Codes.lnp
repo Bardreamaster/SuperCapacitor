@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"codes\startup_stm32f103xb.o"
+"codes\main.o"
+"codes\stm32f1xx_it.o"
+"codes\stm32f1xx_hal_msp.o"
+"codes\stm32f1xx_hal_gpio_ex.o"
+"codes\stm32f1xx_hal_adc.o"
+"codes\stm32f1xx_hal_adc_ex.o"
+"codes\stm32f1xx_hal_can.o"
+"codes\stm32f1xx_hal_tim.o"
+"codes\stm32f1xx_hal_tim_ex.o"
+"codes\stm32f1xx_hal_uart.o"
+"codes\stm32f1xx_hal.o"
+"codes\stm32f1xx_hal_rcc.o"
+"codes\stm32f1xx_hal_rcc_ex.o"
+"codes\stm32f1xx_hal_gpio.o"
+"codes\stm32f1xx_hal_dma.o"
+"codes\stm32f1xx_hal_cortex.o"
+"codes\stm32f1xx_hal_pwr.o"
+"codes\stm32f1xx_hal_flash.o"
+"codes\stm32f1xx_hal_flash_ex.o"
+"codes\stm32f1xx_hal_exti.o"
+"codes\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Codes\Codes.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Codes.map" -o Codes\Codes.axf

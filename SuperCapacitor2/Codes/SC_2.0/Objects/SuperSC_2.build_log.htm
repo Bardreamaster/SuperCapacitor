@@ -1,0 +1,187 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: changshan shi, SUSTech, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.20
+Toolchain Path:  P:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DCM.DLL V1.13.7.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.9.0
+ 
+<h2>Project:</h2>
+O:\Artinx\SuperCapacitor\SuperCapacitor2\Codes\SC_2.0\SuperSC_2.0.uvprojx
+Project File Date:  04/30/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'P:\Keil\ARM\ARMCC\Bin'
+Build target 'SC2'
+compiling delay.c...
+compiling main.c...
+.\RTE\_SC2\Hardware\gpio\gpio.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+RTE\_SC2\Main\main.c(18): warning:  #177-D: variable "a" was declared but never referenced
+  	int a = 1;
+RTE\_SC2\Main\main.c: 2 warnings, 0 errors
+compiling adc.c...
+compiling led.c...
+RTE\_SC2\Hardware\led\led.c(21): warning:  #1-D: last line of file ends without a newline
+  }
+RTE\_SC2\Hardware\led\led.c: 1 warning, 0 errors
+compiling powerlimit.c...
+compiling timer.c...
+compiling misc.c...
+compiling gpio.c...
+RTE\_SC2\Hardware\gpio\gpio.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+RTE\_SC2\Hardware\gpio\gpio.c(65): warning:  #1-D: last line of file ends without a newline
+  	
+RTE\_SC2\Hardware\gpio\gpio.c: 2 warnings, 0 errors
+compiling usart.c...
+RTE\_SC2\Hardware\usart\usart.c(45): warning:  #550-D: variable "Res" was set but never used
+  	uint8_t Res;
+RTE\_SC2\Hardware\usart\usart.c: 1 warning, 0 errors
+compiling stm32f10x_adc.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+assembling startup_stm32f10x_md.s...
+compiling DMA_STM32F10x.c...
+compiling GPIO_STM32F10x.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=5088 RO-data=268 RW-data=56 ZI-data=1632  
+".\Objects\SuperSC_2.0" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil::Device:Startup:1.0.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: ADC Version: 3.5.0
+   * Component: CAN Version: 3.5.0
+   * Component: Framework Version: 3.5.1
+   * Component: DMA Version: 3.5.0
+   * Component: DBGMCU Version: 3.5.0
+   * Component: DMA Version: 1.2
+   * Component: EXTI Version: 3.5.0
+   * Component: CRC Version: 3.5.0
+   * Component: TIM Version: 3.5.0
+   * Component: SDIO Version: 3.5.0
+   * Component: GPIO Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: RTC Version: 3.5.0
+   * Component: GPIO Version: 1.3
+   * Component: USART Version: 3.5.0
+
+<h2>Collection of Component include folders:</h2>
+  O:\Artinx\SuperCapacitor\SuperCapacitor2\Codes\SC_2.0\RTE
+  O:\Artinx\SuperCapacitor\SuperCapacitor2\Codes\SC_2.0\RTE\Device\STM32F103C8
+  P:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  P:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+  P:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\StdPeriph_Driver\inc
+  P:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+
+   * Component: Keil::Device:StdPeriph Drivers:ADC:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:CAN:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_can.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_can.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:DMA:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dma.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dma.h
+
+   * Component: Keil::Device:StdPeriph Drivers:DBGMCU:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dbgmcu.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dbgmcu.h
+
+   * Component: Keil::Device:DMA:1.2
+      Source file:   RTE_Driver\DMA_STM32F10x.c
+      Include file:  RTE_Driver\DMA_STM32F10x.h
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
+
+   * Component: Keil::Device:StdPeriph Drivers:CRC:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_crc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_crc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:SDIO:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_sdio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_sdio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RTC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rtc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rtc.c
+
+   * Component: Keil::Device:GPIO:1.3
+      Source file:   RTE_Driver\GPIO_STM32F10x.c
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+Build Time Elapsed:  00:00:13
+</pre>
+</body>
+</html>
